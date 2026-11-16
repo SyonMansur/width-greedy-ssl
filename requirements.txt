@@ -1,0 +1,6 @@
+# pick matching torch and torchvision builds for cuda setup
+torch>=2.2
+torchvision>=0.17
+numpy>=1.26
+scipy>=1.11  # linear_probe.py
+# mup is only needed for parametrization = "mup": python -m pip install mup
