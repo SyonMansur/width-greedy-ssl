@@ -38,8 +38,6 @@ All of these use Barlow Twins on CIFAR-10. Training options are set in `SETTINGS
 - **Linear probes** (Appendix A.4). `python linear_probe.py` fits the probe on the final layer of a saved encoder; set `LAYERS = "all"` for every layer, or `DATASET = "cifar100"` for the CIFAR-100 transfer probes.
 - **Compute and memory** (Appendix A.7). `python compute.py` measures training FLOPs and peak memory for end-to-end and greedy training at one depth and width.
 - **Information retention.** `python retention.py` measures how much of each layer's features can be recovered linearly from the next layer.
-- **Shorter greedy budgets.** Use `method = "greedy"` with `epochs` set to `240` or `500`.
-- **ResNet-18 pilot.** Set `architecture = "resnet18"` (keep `depth = 4`: greedy training treats its four stages as layers).
 
 ## Files
 
